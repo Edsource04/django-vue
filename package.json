@@ -1,0 +1,33 @@
+{
+  "name": "prestoproject",
+  "version": "1.0.0",
+  "description": "Vue client for presto",
+  "main": "App.js",
+  "author": "Edgar Rivera",
+  "license": "ISC",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.4",
+    "material-design-icons-iconfont": "^3.0.3",
+    "vue": "^2.3.3",
+    "vue-resource": "^1.3.4",
+    "vuetify": "^1.0.18"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-env": "^1.5.1",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "url-loader": "^1.0.1",
+    "vue-loader": "^12.1.0",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.6.1"
+  }
+}
