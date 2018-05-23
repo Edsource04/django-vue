@@ -12,11 +12,9 @@ import 'material-design-icons-iconfont/dist//material-design-icons.css'
 import 'babel-polyfill'
 
 new Vue({
-    el: '#vue-app',
-    Router,
-    components: { App },
-    template: '<App />'
-})
+    component: {App},
+    Router
+}).$mount("#vue-app")
 
 
 
