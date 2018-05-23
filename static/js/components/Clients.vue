@@ -1,6 +1,5 @@
 <template>
   <div id="">
-    <Header></Header>
     <table v-if="clients">
         <thead>
             <th>Full Name</th>
@@ -19,7 +18,6 @@
 </template>
 <script>
 import axios from 'axios'
-import Header from './global/Header.vue'
 
 export default {
     data(){
@@ -29,9 +27,6 @@ export default {
     },
     mounted(){
         axios.get('/presto/clients').then(res => this.clients = res.data)
-    },
-    components: {
-        Header
     }
 }
 </script>
