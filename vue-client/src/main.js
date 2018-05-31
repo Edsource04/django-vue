@@ -3,12 +3,24 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Vuetify from 'vuetify'
+import Vuex from 'vuex'
+import store from './store/store'
 
 Vue.config.productionTip = false
+
+Vue.use(Vuetify)
+Vue.use(Vuex)
+
+import 'vuetify/dist/vuetify.min.css'
+import 'material-design-icons-iconfont/dist//material-design-icons.css'
+import 'babel-polyfill'
+import 'es6-promise/auto'
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   components: { App },
   template: '<App/>'
