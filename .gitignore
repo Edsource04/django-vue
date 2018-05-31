@@ -1,3 +1,4 @@
 node_modules
 prestoproject
 *.sqlite3
+vue-client/node_modules/

@@ -11,10 +11,10 @@ import 'vuetify/dist/vuetify.min.css'
 import 'material-design-icons-iconfont/dist//material-design-icons.css'
 import 'babel-polyfill'
 
-new Vue({
-    component: {App},
-    Router
-}).$mount("#vue-app")
+const app = new Vue({
+    Router,
+    render: createEle => createEle(App)
+}).$mount('#vue-app')
 
 
 
